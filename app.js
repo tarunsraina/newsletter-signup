@@ -37,11 +37,11 @@ app.post("/",function(req,res){
     
     var jsonData = JSON.stringify(data);
 
-    const url = "https://us11.api.mailchimp.com/3.0/lists/5eb0d8c284";
+    const url = "https://us11.api.mailchimp.com/3.0/lists/5euhhb084";
 
     const options = {
         method : "POST",
-        auth : "tarun:9cffbe0b3eaacdc3a31f39b1a51a675a-us11"
+        auth : "tarun:9cffbe0b3eaa352321dfsfb1a51a675a-us11"
     }
 
     const request = https.request(url,options, function(response){
@@ -70,8 +70,3 @@ app.listen(3000, function(){
     console.log("server is running");
 });
 
-// api key
-//9cffbe0b3eaacdc3a31f39b1a51a675a-us11
-
-//aud-key
-//5eb0d8c284
